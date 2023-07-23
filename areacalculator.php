@@ -1,6 +1,6 @@
 <?php
 class AreCalculator 
-require_once (./class/square.php');
+require_once (./class/circle.php');
 { 
     
     $tabsquare = array('square1', 'square2', 'square3', 'sqaure4');
@@ -8,14 +8,18 @@ require_once (./class/square.php');
         return $width*$height;
     }
 
-    public fuction calculate($sqaure1,$square2): int;
+    public fuction calculate($square1, $radius): float;
 
     {
 
      $sqaure1->airesquare();
-     $sqaure2->airesquare(); 
-       return $square1+ $square2;
+     $cirle->airecircle(); 
+    return $square1+ $airecircle;
 
     }
+    $square = new Square(5, 6);
+$circle = new Circle(2);
+$calculator = new AreaCalculator();
+$calculator->calulate([$square1, $circle]);
 
 }
